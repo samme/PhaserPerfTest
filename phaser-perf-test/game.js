@@ -76,7 +76,7 @@
         var scope = this;
         this.game.input.onDown.add(function() {                            
             console.log('addText');
-            for (var i = 1; i < 50; i++) {
+            for (var i = 0; i < 50; i++) {
                 scope.game.add.text(Math.random() * 400, 100 + (Math.random() * 300), "Text object #" + (scope.number_of_text_objects), {fontSize: 18, fill: "#FFFFFF"});
                 scope.number_of_text_objects += 1;
             }
